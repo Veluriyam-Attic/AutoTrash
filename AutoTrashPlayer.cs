@@ -53,6 +53,9 @@ namespace AutoTrash
 
 		public override bool ShiftClickSlot(Item[] inventory, int context, int slot) {
 			if (context == Terraria.UI.ItemSlot.Context.InventoryItem || context == Terraria.UI.ItemSlot.Context.InventoryCoin || context == Terraria.UI.ItemSlot.Context.InventoryAmmo) {
+				if (inventory[slot].IsAir)
+					return false;
+
 				if (Main.keyState.IsKeyDown(Keys.LeftControl) || Main.keyState.IsKeyDown(Keys.RightControl)) {
 					if (AutoTrashEnabled && (!AutoTrashItems.Any(x => x.type == inventory[slot].type) || ModContent.GetInstance<AutoTrashClientConfig>().SellInstead) && !inventory[slot].favorited) {
 						Terraria.Audio.SoundEngine.PlaySound(SoundID.Grab);

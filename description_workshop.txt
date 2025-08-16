@@ -8,6 +8,8 @@ Ctrl+Shift click inventory items to quickly add to auto trash list.
 
 You can also use the config to have the Auto-Trash slot instead act as an Auto-Sell slot. In Auto-Sell mode, you automatically get coins when items are auto-trashed. The default is 15%, slightly less than the 20% you would get from shops.
 
+[video mp4=https://github.com/user-attachments/assets/0d9ff49e-f366-4889-a5ff-d0c4eef4dbad][/video]
+
 [h1]Links[/h1]
 Source code hosted on [url=github.com/JavidPack/AutoTrash]GitHub[/url], collaboration welcome
 For questions or suggestions, come to my Discord: [url=discord.gg/w8Hcwby][img]https://discordapp.com/api/guilds/276235094622994433/widget.png?style=shield[/img][/url]
