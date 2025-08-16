@@ -76,7 +76,8 @@ namespace AutoTrash
 
 			if (IsMouseHovering) {
 				//Main.toolTip = item.Clone();
-				Main.hoverItemName = item.Name;
+				Terraria.ModLoader.UI.UICommon.TooltipMouseText(item.Name);
+				//Main.hoverItemName = item.Name;
 				//ItemChecklistUI.hoverText = item.name + (item.modItem != null ? " [" + item.modItem.mod.Name + "]" : "");
 			}
 		}

@@ -1,6 +1,8 @@
 NoValue: Нет цены
 TrashAllItemsWithNoValue: Удалить все предметы без цены
 ClickToRemove: Нажмите, чтобы удалить
+// FilterByName: Filter by Name
+// Close: Close
 YouNeedToHoldAltAndClickToClearTheList: Удерживая Alt, кликните, чтобы очистить список
 NotEnoughMoneyToReclaimAutoSellItem: Недостаточно денег для возврата предмета, который был продан при помощи Авто-Продажи
 ClickToRemoveFromAutoSellList: Нажмите, чтобы удалить из списка автоматической продажи

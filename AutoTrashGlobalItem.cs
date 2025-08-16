@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using ReLogic.Content;
 using System;
 using System.Linq;
+using System.Reflection;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
@@ -109,6 +110,17 @@ namespace AutoTrash
 						AutoTrash.instance.autoTrashListUI.UpdateNeeded();
 						AutoTrashListUI.visible = !AutoTrashListUI.visible;
 						Terraria.Audio.SoundEngine.PlaySound(AutoTrashListUI.visible ? SoundID.MenuOpen : SoundID.MenuClose);
+
+						// Debug assistance, allows for reinitializing AutoTrashListUI
+						/*
+						if (!AutoTrashListUI.visible)
+						{
+							AutoTrash.instance.autoTrashListUI.RemoveAllChildren();
+							var isInitializedFieldInfo = typeof(Terraria.UI.UIElement).GetField("_isInitialized", BindingFlags.Instance | BindingFlags.NonPublic);
+							isInitializedFieldInfo.SetValue(AutoTrash.instance.autoTrashListUI, false);
+							AutoTrash.instance.autoTrashListUI.Activate();
+						}
+						*/
 					}
 				}
 

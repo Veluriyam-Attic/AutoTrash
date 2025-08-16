@@ -1,6 +1,8 @@
 NoValue: 无价值
 TrashAllItemsWithNoValue: 将所有无价值物品丢弃
 ClickToRemove: 点击以移出自动丢弃列表
+// FilterByName: Filter by Name
+// Close: Close
 YouNeedToHoldAltAndClickToClearTheList: 你需要按住alt再左键单击以清空自动丢弃列表
 NotEnoughMoneyToReclaimAutoSellItem: 没有足够的钱来赎回自动售卖的物品
 ClickToRemoveFromAutoSellList: 点击以移出自动售卖清单

@@ -70,7 +70,8 @@ namespace AutoTrash
 				spriteBatch.Draw(checkmarkTexture.Value, pos, null, disabled ? Color.Gray : Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
 
 			if (IsMouseHovering) {
-				Main.hoverItemName = hoverText;
+				Terraria.ModLoader.UI.UICommon.TooltipMouseText(hoverText);
+				//Main.hoverItemName = hoverText;
 			}
 		}
 	}
