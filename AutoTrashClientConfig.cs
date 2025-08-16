@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using Terraria;
 using Terraria.ModLoader.Config;
 
 namespace AutoTrash
@@ -22,5 +21,5 @@ namespace AutoTrash
 
 		[DefaultValue(false)]
 		public bool PreventSpawn { get; set; }
-    }
+	}
 }

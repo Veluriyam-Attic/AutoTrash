@@ -138,8 +138,7 @@ namespace AutoTrash
 					if (Main.mouseLeftRelease && Main.mouseLeft && autoTrashPlayer.AutoTrashEnabled) {
 						int originalID = singleSlotArray[0].type;
 
-						if (clientconfig.SellInstead) 
-						{
+						if (clientconfig.SellInstead) {
 							float sellPercent = (serverconfig.SellValue >= 1 ? serverconfig.SellValue : 1) / 100f;
 							var value = (int)Math.Floor(singleSlotArray[0].value * singleSlotArray[0].stack * sellPercent);
 
@@ -177,7 +176,7 @@ namespace AutoTrash
 						//{
 						Main.hoverItemName = singleSlotArray[0].type != ItemID.None
 							? Language.GetTextValue((clientconfig.SellInstead ? "Mods.AutoTrash.ClickToRemoveFromAutoSellList" : "Mods.AutoTrash.ClickToRemoveFromAutoTrashList"))
-							: Language.GetTextValue((clientconfig.SellInstead ? "Mods.AutoTrash.PlaceItemToAddToAutoSellList" :  "Mods.AutoTrash.PlaceItemToAddToAutoTrashList"));
+							: Language.GetTextValue((clientconfig.SellInstead ? "Mods.AutoTrash.PlaceItemToAddToAutoSellList" : "Mods.AutoTrash.PlaceItemToAddToAutoTrashList"));
 						//}
 					}
 					else {
