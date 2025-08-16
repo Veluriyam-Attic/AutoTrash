@@ -76,6 +76,8 @@ namespace AutoTrash
 			return false; // do default behavior.
 		}
 
+		// No need for this anymore
+		/*
 		public static HashSet<int> caughtFish = new HashSet<int>();
 		public override void PreUpdate() {
 			// Fishing uses player.GetItem bypassing AutoTrash.
@@ -97,6 +99,7 @@ namespace AutoTrash
 				}
 			}
 		}
+		*/
 
 		public void OnItemAutotrashed() {
 			var clientconfig = ModContent.GetInstance<AutoTrashClientConfig>();
@@ -104,6 +107,7 @@ namespace AutoTrash
 
 			if (clientconfig.SellInstead && LastAutoTrashItem.value > 0 && !(LastAutoTrashItem.type >= ItemID.CopperCoin && LastAutoTrashItem.type <= ItemID.PlatinumCoin)) {
 				float sellPercent = (serverconfig.SellValue >= 1 ? serverconfig.SellValue : 1) / 100f;
+
 				var value = Math.Floor((double)(LastAutoTrashItem.value * LastAutoTrashItem.stack * sellPercent));
 
 				var plat = Math.Floor(value / Item.platinum);
@@ -112,7 +116,7 @@ namespace AutoTrash
 				var copper = Math.Floor(value - (plat * Item.platinum) - (gold * Item.gold) - (silver * Item.silver));
 
 				Terraria.DataStructures.IEntitySource source = Main.LocalPlayer.GetSource_OpenItem(LastAutoTrashItem.type);
-				if (plat > 0) 
+				if (plat > 0)
 					Player.QuickSpawnItem(source, ItemID.PlatinumCoin, (int)plat);
 				if (gold > 0)
 					Player.QuickSpawnItem(source, ItemID.GoldCoin, (int)gold);
