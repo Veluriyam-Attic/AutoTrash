@@ -10,7 +10,7 @@ using Terraria.ModLoader.IO;
 
 namespace AutoTrash
 {
-	internal class AutoTrashPlayer : ModPlayer
+	public class AutoTrashPlayer : ModPlayer
 	{
 		public bool AutoTrashEnabled = false;
 		public List<Item> AutoTrashItems;
