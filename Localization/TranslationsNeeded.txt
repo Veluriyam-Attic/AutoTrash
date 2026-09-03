@@ -3,7 +3,7 @@ de-DE, 0/35, 0%, missing 35
 it-IT, 0/35, 0%, missing 35
 fr-FR, 0/35, 0%, missing 35
 es-ES, 0/35, 0%, missing 35
-ru-RU, 30/35, 86%, missing 5
+ru-RU, 35/35, 100%, missing 0
 zh-Hans, 30/35, 86%, missing 5
 pt-BR, 0/35, 0%, missing 35
 pl-PL, 0/35, 0%, missing 35
